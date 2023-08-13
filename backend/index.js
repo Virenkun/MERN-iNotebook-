@@ -10,9 +10,10 @@ app.use(express.json());
 //AVAILBLE ROUTES
 
 const auth = require('./routes/auth.js')
-// const notes = require('./routes/notes')
+const notes = require('./routes/notes')
 
 app.use('/api/auth', auth)
+app.use('/api/notes', notes)
 // app.use('/api/notes', notes)
 
 
